@@ -8,6 +8,8 @@ const app = express();
 // Middleware set up
 app.use(express.json());
 
+connectDB();
+
 // Routes set up
 app.use(routes);
 
